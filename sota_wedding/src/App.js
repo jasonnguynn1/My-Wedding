@@ -627,11 +627,11 @@ function App() {
             items={[
               {
                 color: 'black',
-                children: <div className='flex flex-col justify-center items-center w-[105px] font-mono'>
+                children: <div className='flex flex-col justify-center items-center w-[150px] font-mono'>
                   <MdOutlinePhotoCamera className='text-[50px] text-white' />
                   <p className='font-bold text-white'>16:30</p>
                   <p className='text-white'>Đón khách</p>
-                  <div className='flex flex-col justify-center items-center w-[105px] font-mono absolute top-[-25px]' id='timeline1'>
+                  <div className='flex flex-col justify-center items-center w-[150px] font-mono absolute top-[-25px]' id='timeline1'>
                     <MdOutlinePhotoCamera className='text-[50px]' />
                     <p className='font-bold'>16:30</p>
                     <p>Đón khách</p>
@@ -640,7 +640,7 @@ function App() {
               },
               {
                 color: 'black',
-                children: <div className='flex flex-col justify-center items-center w-[150px] mr-[160px] font-mono'>
+                children: <div className='flex flex-col justify-center items-center w-[150px] mr-[200px] font-mono'>
                   <GiMeal className='text-[50px] text-white' />
                   <p className='font-bold text-white'>17:30</p>
                   <p className='text-white'>Khai tiệc</p>
@@ -655,11 +655,11 @@ function App() {
               },
               {
                 color: 'black',
-                children: <div className='flex flex-col justify-center items-center w-[110px] font-mono' >
+                children: <div className='flex flex-col justify-center items-center w-[150px] font-mono' >
                   <LuAlarmClock className='text-[50px] text-white' />
                   <p className='font-bold text-white'>20:00</p>
                   <p className='text-white'>Kết thúc tiệc</p>
-                  <div className='flex flex-col justify-center items-center w-[110px] font-mono absolute top-[-25px]' id='timeline3'>
+                  <div className='flex flex-col justify-center items-center w-[150px] font-mono absolute top-[-25px]' id='timeline3'>
                     <LuAlarmClock className='text-[50px]' />
                     <p className='font-bold'>20:00</p>
                     <p>Kết thúc tiệc</p>
