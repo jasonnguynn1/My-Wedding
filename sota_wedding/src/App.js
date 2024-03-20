@@ -732,7 +732,7 @@ function App() {
           <IoMdHeart className='text-[30px] absolute top-[85px] right-[30px]' />
         </div>
         <img src={thankyou} alt='thankyou' className='imgFit mt-3' />
-        <div className='fixed bottom-0 right-0'>
+        <div className='fixed bottom-0 right-[5px]'>
           <button onClick={togglePlay}>
             {isPlaying ? <IoPauseCircleOutline className='text-[50px] text-white  bg-black rounded-[50px]'/> 
             : 
