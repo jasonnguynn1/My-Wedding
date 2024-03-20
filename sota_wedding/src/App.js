@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './App.css';
 import { Timeline } from 'antd';
 import { SlLocationPin } from "react-icons/sl";
@@ -6,6 +6,8 @@ import { MdOutlinePhotoCamera } from "react-icons/md";
 import { LuAlarmClock } from "react-icons/lu";
 import { IoMdHeart } from "react-icons/io";
 import { GiMeal } from "react-icons/gi";
+import { IoPlayCircleOutline } from "react-icons/io5";
+import { IoPauseCircleOutline } from "react-icons/io5";
 import anh1 from "./Assets/anh1.jpg"
 import anh2 from "./Assets/anh2.jpg"
 import anh3 from "./Assets/anh3.jpg"
@@ -41,8 +43,20 @@ import match1 from "./Assets/match1.png"
 import match2 from "./Assets/match2.png"
 import match3 from "./Assets/match3.png"
 import thankyou from "./Assets/thankyou.jpg"
+import music from "./Assets/music.mp3"
 
 function App() {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const audioRef = useRef(new Audio(music));
+  const togglePlay = () => {
+    const audio = audioRef.current;
+    if (isPlaying) {
+      audio.pause();
+    } else {
+      audio.play();
+    }
+    setIsPlaying(!isPlaying);
+  };
   useEffect(() => {
     const invited1 = document.getElementById('invited1');
     const invited2 = document.getElementById('invited2');
@@ -590,7 +604,7 @@ function App() {
           </table>
         </div>
         <div className='px-11 py-6'>
-          <p className='uppercase text-center' id='tiecmung'>Tiệc mừng lễ thành hôn được tổ chức vào lúc 18 giờ 00 phút</p>
+          <p className='uppercase text-center' id='tiecmung'>Tiệc mừng lễ thành hôn được tổ chức vào lúc 17 giờ 30 phút</p>
         </div>
         <div className='px-10 flex flex-row '>
           <div className='flex-1 flex justify-center flex-col items-center'>
@@ -706,7 +720,7 @@ function App() {
         </div>
         <div className='notcainay px-2 mt-2'>
           <img src={anh21} alt='anh21' className='imgFit invisible' id='albumanh15' />
-          <p className='text-[12px] text-justify px-2 invisible' id='textanh3'>‘Our love story is my favorite tale, and I promise to continue writing it with you, chaper by chaper, for all the days of your lives’</p>
+          <p className='text-[12px] text-left px-1 invisible' id='textanh3'>‘Our love story is my favorite tale, and I promise to continue writing it with you, chaper by chaper, for all the days of your lives’</p>
         </div>
         <div className='notcainay1 px-2 mt-2'>
           <p className='text-[12px] text-center px-2 invisible' id='textanh4'>‘True love is eternal, transcending time and space, forever woven into the fabric of existence.’</p>
@@ -718,8 +732,14 @@ function App() {
           <IoMdHeart className='text-[30px] absolute top-[85px] right-[30px]' />
         </div>
         <img src={thankyou} alt='thankyou' className='imgFit mt-3' />
+        <div className='fixed bottom-0 right-0'>
+          <button onClick={togglePlay}>
+            {isPlaying ? <IoPauseCircleOutline className='text-[50px] text-white  bg-black rounded-[50px]'/> 
+            : 
+            <IoPlayCircleOutline className='text-[50px] text-white bg-black  rounded-[50px]'/>}
+          </button>
+        </div>
       </div>
-
     </div >
   );
 }
