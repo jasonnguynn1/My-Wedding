@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/My-Wedding/static/css/main.1d58c9a7.css",
-    "main.js": "/My-Wedding/static/js/main.47d1a750.js",
+    "main.css": "/My-Wedding/static/css/main.6af5a5fa.css",
+    "main.js": "/My-Wedding/static/js/main.295c336b.js",
     "static/js/453.9cd7b888.chunk.js": "/My-Wedding/static/js/453.9cd7b888.chunk.js",
     "static/media/anh4.jpg": "/My-Wedding/static/media/anh4.f26eb15d363cb28c80e4.jpg",
     "static/media/anh23.jpg": "/My-Wedding/static/media/anh23.2e98327c2685b6614e31.jpg",
@@ -14,6 +14,7 @@
     "static/media/anh13.jpg": "/My-Wedding/static/media/anh13.10de8f6c88508c73d05c.jpg",
     "static/media/anh18.jpg": "/My-Wedding/static/media/anh18.a7eb01312ef7614e95e2.jpg",
     "static/media/anh9.jpg": "/My-Wedding/static/media/anh9.9a9af2cd879baca4a2b1.jpg",
+    "static/media/music.mp3": "/My-Wedding/static/media/music.cb960b98b8b474dbe961.mp3",
     "static/media/anh3.jpg": "/My-Wedding/static/media/anh3.62417ed8d25d6de2476a.jpg",
     "static/media/anh20.jpg": "/My-Wedding/static/media/anh20.9e6546e50174abe04473.jpg",
     "static/media/anh17.jpg": "/My-Wedding/static/media/anh17.09e6b0db75538a4a25dc.jpg",
@@ -39,12 +40,12 @@
     "static/media/match3.png": "/My-Wedding/static/media/match3.644912dbc0982d6c1578.png",
     "static/media/match2.png": "/My-Wedding/static/media/match2.a27bbee690cdaaa1a828.png",
     "index.html": "/My-Wedding/index.html",
-    "main.1d58c9a7.css.map": "/My-Wedding/static/css/main.1d58c9a7.css.map",
-    "main.47d1a750.js.map": "/My-Wedding/static/js/main.47d1a750.js.map",
+    "main.6af5a5fa.css.map": "/My-Wedding/static/css/main.6af5a5fa.css.map",
+    "main.295c336b.js.map": "/My-Wedding/static/js/main.295c336b.js.map",
     "453.9cd7b888.chunk.js.map": "/My-Wedding/static/js/453.9cd7b888.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d58c9a7.css",
-    "static/js/main.47d1a750.js"
+    "static/css/main.6af5a5fa.css",
+    "static/js/main.295c336b.js"
   ]
 }
