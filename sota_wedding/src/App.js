@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useRef, useState } from 'react';
 import './App.css';
 import { Timeline } from 'antd';
@@ -48,6 +49,7 @@ import music from "./Assets/music.mp3"
 function App() {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(new Audio(music));
+
   const togglePlay = () => {
     const audio = audioRef.current;
     if (isPlaying) {
@@ -57,6 +59,7 @@ function App() {
     }
     setIsPlaying(!isPlaying);
   };
+
   useEffect(() => {
     const invited1 = document.getElementById('invited1');
     const invited2 = document.getElementById('invited2');
@@ -166,7 +169,6 @@ function App() {
       let heighttinder2 = tinder2.offsetHeight;
       let heighttinder3 = tinder3.offsetHeight;
 
-      console.log(top, offsetInvited1, heightinvited1)
       if (top >= offsettinder1 && top < (offsettinder1 + 2000 + heighttinder1)) {
         tinder1.classList.remove('invisible')
         tinder1.classList.add('slideUp')
@@ -531,13 +533,13 @@ function App() {
           </div>
         </div>
         <div className='relative'>
-          <img src={match1} alt='match1' className='imgFit invisible absolute top-[150px]' id='tinder1' />
-          <img src={match2} alt='match2' className='imgFit invisible absolute top-[150px]' id='tinder2' />
-          <img src={match3} alt='match3' className='imgFit invisible absolute top-[150px]' id='tinder3' />
+          <img src={match1} alt='match1' className='imgFit invisible absolute top-[130px]' id='tinder1' />
+          <img src={match2} alt='match2' className='imgFit invisible absolute top-[130px]' id='tinder2' />
+          <img src={match3} alt='match3' className='imgFit invisible absolute top-[130px]' id='tinder3' />
           <img src={anh23} alt='anh23' className='imgFit mt-4' />
         </div>
         <div className='p-4 flex flex-col gap-3 items-center justify-center'>
-          <hr class="rounded w-[20%]"></hr>
+          <hr className="rounded w-[20%]"></hr>
           <p id='invited1'>Thân mời</p>
           <p id='invited2'>Đến dự lễ cưới của chúng mình</p>
         </div>
